@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quán Ăn Nhà Tôi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🍜 Quán Ăn Nhà Tôi</h1>
+        <button id="cart-btn">🛒 Giỏ hàng (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <!-- Menu -->
+    <section class="menu">
+        <h2>Menu Hôm Nay</h2>
+        <div class="menu-list" id="menu-list"></div>
+    </section>
+
+    <!-- Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h3>Giỏ hàng</h3>
+            <ul id="cart-items"></ul>
+            <p><b>Tổng:</b> <span id="cart-total">0</span> VNĐ</p>
+            <button id="order-btn">Đặt hàng</button>
+            <button id="close-cart">Đóng</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
